@@ -1,0 +1,69 @@
+Loop and conditions
+Strings- Immutable(We cannot changes the its attributes's values), an object, array of characters.
+declarations-
+	String s1;
+	String s1="Selenim"	
+	String str = new String();
+	String str = new String("Selenum");
+	String str = new String(new Stringbuider);
+	String str = new String(new Stringbuider);
+	
+Stringbuffer- We use this to create mutable string. It is thread-safe.
+Stringbuider- We use this to create mutable string. It is not thread-safe.
+Arrays-It is a containr tht a fixed number of values of sigle type.
+	Declration-
+		Int[]arrayname;
+		Int arrayname[];
+	Constrcting 
+		Int[]arrayname= new int[10];
+		Int arrayname[]Int[]arrayname;
+	Initializing 
+		Int[]arrayname= {1,2,3,4,4};
+		arrayname[0]=1;
+		arrayname[1]=2;
+		arrayname[2]=3;
+		arrayname[3]=4;
+
+Expection Handing
+	Error-Out of socpe
+	Expection-anyting unwanted behaviour tht haapens due to proggming flow, mismathc data etc.
+	Runtime and comple time
+Why It is required
+		to control the proggming flow
+		we can throws the expections.
+		printStackTrace-with line numebr and tells us the exact reason of error or expections. It describe us the effected area.
+		
+Keyword/compenets of expection handling
+	try-it is the start black where we keep or logic or proggmes.
+	catch- It is the ending block where we keep expections or errr.
+	throw- When we want to throw an expection explicityly.
+	throws-It throws the expection implicitly. It comes/hanlded by its method.
+	finaaly-It is optiionl but if you keep this blok in ur try catch it will be executed either the error has come or not.It is used for clean-up process.
+
+Types of expception-
+	1-Checked expception-These expections are chekced at complile time.
+		1-Filenotfound
+		2-I-O expception
+		3-IllegalSytex errr
+		4-ClassNotFound
+	2-Uncheked expection- These expections are not chekced at complile time. 
+		1-Arithmatic expection
+		2-Nullpointer expception
+		3-Arrayindexoutofbound
+	
+	
+Files I/O	
+Java performs I/O using streams.
+	Byte Strema- I/O using bytes
+	Character Stream- I/O using characters
+
+Excel file reading 
+2003 HSSFworkbook
+2007 XCCFworkbook
+
+
+	
+		
+	
+OPPs Concepts
+Class Objects

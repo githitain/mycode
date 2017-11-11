@@ -1,0 +1,120 @@
+Class-1
+Introduction to Automation Testing	
+	What is Automation Testing
+	Why and when will we go for Automation
+	Different Kind of Applications in IT to Automate
+	Type of Automation Testing
+	Automation Testing Tools
+	Assignment
+Introduction to Selenium	
+	What is Selenium and its different flavors. 
+	Difference between Selenium and OTP (other tools available in the Market)
+	How Selenium Automates Application
+	Assignment
+Introduction to Selenium IDE
+	What is Selenium IDE
+	Important Features of Selenium IDE
+	What are commends in Selenium IDE
+	Assignment
+Introduction to Selenium Webdriver	
+	What is  WebDriver?
+	What is the difference between Selenium IDE and WD?
+	Downloading web driver Jars configuring in eclipse
+	Create few examples using Webdriver
+	Create examples for Firefox, IE, Chrome
+	Architecture of Selenium WebDriver
+	Assignment
+
+Class-2
+Introduction to Core Java-1	
+	Java Features
+	Write Simple Java Program
+	Variables and Data Type in Java
+	Operators in Java
+	Modifier in Java 
+	Decision Making Statement (If, Else)
+	Java - Loop control
+	Java - String
+	Java - Arrays
+	Java - Exception Handling
+	Assignment
+Introduction to Junit Framework   	
+	What is Junit
+	Running Java Programs using junit
+	Writing Selenium tests from scratch using Junit Framework
+	Assignment
+	
+	
+	
+	
+Locators & Object Identification in Selenium	
+	Tools to identify elements/objects
+	Firebug+Firepath
+	IE Developer tools
+	Google Chrome Developer tools
+	Locating elements by ID
+	Finding elements by name
+	Finding elements by link text
+	Finding elements by XPath
+	Finding Elements by using CSS
+	Assignment
+Advanced Webdriver
+	WebDriver interface	AP1
+	Exception in WebDriver
+	Different Wait in Webdriver
+	Handel Hyperlink
+	Handel Button and Check box
+	Handel Radio Button and DropDown Controls
+	Select value from DropDown
+	Display all values
+	Select values step by step
+	Capture screenshots
+	File uploads and File downloads (Handling Window based controls using Robot and Sikuli API)
+	Handling alerts box and Verifying the Alert Texts
+	Handling confirmation messages
+	Keyboard actions
+	Mouse actions
+	Handling Iframes working with Nested Iframes
+	Handling multiple tabs
+	Handling popup
+	Assignment
+Introduction to TestNG Framework	
+	Overview of TestNG
+	Environment of TestNG
+	Writing WebDriver Test Cases using TestNG
+	Basic Annotations of TestNG
+	Assignment
+Introduction to Core Java-2	
+	Java – Files(txt,xml,exl) I/O
+	Java - OOP Concepts
+	Java - Final, Static, 
+	Java Collections
+	Java Threading
+	Assignment
+Introduction to Robat and Sikuli API	
+	What is Robat Framewrok
+	What is Sikuli API
+	Assignment
+Introduction to Apache Log4j API	
+	What is Log4j
+	Log4j use in Automation
+	Assignment
+Introduction to Maven	
+	Introduction about maven
+	Installation of Maven
+	Demo using Sample Maven Project
+	Assignment
+Automation Framework Development	
+	Keyword Framework
+	Page-Object Framework
+	BBD Framework (Cucumber)
+	Assignment
+Continuous Integration Testing using Jenkins	
+	What is Continues Integration
+	About Jenkins
+	Installing Jenkins
+	Creating a simple job
+	Integrating Jenkins to the Project
+	
+	
+	

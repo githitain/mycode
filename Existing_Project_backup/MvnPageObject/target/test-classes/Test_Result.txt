@@ -1,0 +1,4 @@
+10/17/15 1:56 PM-TC-1 Passed - Element1 is Present
+10/17/15 1:56 PM-TC-2 Failed-Element is not Present
+10/17/15 1:56 PM-TC-3 Failed-Element is not Present
+10/17/15 1:56 PM-TC-4 Failed-Login was not done successfuly

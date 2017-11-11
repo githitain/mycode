@@ -1,0 +1,16 @@
+Feature: Yahoo application testing
+Scenario: Yahoo Login Test
+
+Given user opens yahoo login page
+Then user enters login_id
+Then user click on Next
+And user clicks forogt password link
+And close the browser
+
+
+
+Feature: Site Search
+Scenario:
+  Given We navigate to the homepage
+  When We search for the word agile
+  Then The results for the search will be displayed

@@ -1,0 +1,21 @@
+package cClasses;
+
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class logging 
+{
+
+		static
+		{
+			PropertyConfigurator.configure("log4j.properties");
+		}
+		
+		public final static Logger logger = Logger.getLogger(logging.class);
+
+		public static void main(String[] args)
+		{
+
+		}
+			
+}

@@ -1,0 +1,37 @@
+public class cross_browser 
+
+{
+	public static void main(String []args) throws InterruptedException 
+	{
+		WebDriver driver2;
+		String baseUrl;
+		baseUrl = "https://www.flipkart.com/";
+		System.out.println("launching Brower browser");
+		System.setProperty("webdriver.firefox.marionette","D:\\Selenium jar\\Selenium-3.4.0\\geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver2", "D:\\Automation_Workshop_2017\\Selenium_exe\\chromedriver.exe");
+		System.setProperty("webdriver.ie.driver2", "D:\\Automation_Workshop_2017\\Selenium_exe\\IEDriverServer.exe");
+		System.setProperty("webdriver.opera.driver2", "D:\\Automation_Workshop_2017\\Selenium_exe\\operadriver.exe");
+	
+		driver2 = new FirefoxDriver();
+		//driver2 = new InternetExplorerDriver();
+		//driver2 = new ChromeDriver();
+		//driver2 = new OperaDriver();
+		
+		driver2.get(baseUrl);
+		
+	    driver2.findElement(By.cssSelector("input[name=q]")).sendKeys("wallet");
+		driver2.findElement(By.cssSelector("button.vh79eN[type=submit]")).click();
+		Thread.sleep(3000);
+
+		driver2.findElement(By.xpath("//div[@id='container']/div/div[2]/div[2]/div/div[2]/div/div[2]/div/section/ul/li[2]")).click();
+		driver2.findElement(By.name("//div[@id='container']/div/div[2]/div[2]/div/div[2]/div/div[2]/div/section/ul/li[2]")).click();
+
+		
+		
+		Thread.sleep(3000);
+		
+		
+		//System.out.println("Page title: - "+strPageTitle);
+		driver2.quit();
+	}
+}

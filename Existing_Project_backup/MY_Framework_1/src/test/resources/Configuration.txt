@@ -1,0 +1,9 @@
+#Time to wait
+time=30
+#environment=http://www.gmail.com
+environment=http://qavenc640bun.iii.com/iii/44encore/?lang=eng
+#browser=htmlunit
+browser=firefox
+#browser=internetexplorer
+#browser=googlechrome
+#browser=safari

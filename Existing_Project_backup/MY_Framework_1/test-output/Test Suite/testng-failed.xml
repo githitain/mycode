@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [Test Suite]" parallel="tests">
+  <test name="Windows / ie(failed)" parallel="tests">
+    <classes>
+      <class name="POM.SGrid2">
+        <methods>
+          <include name="IE"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- POM.SGrid2 -->
+      <class name="POM.SGrid">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- POM.SGrid -->
+    </classes>
+  </test> <!-- Windows / ie(failed) -->
+  <test name="Windows / Firefox(failed)" parallel="tests">
+    <classes>
+      <class name="POM.SGrid2">
+        <methods>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- POM.SGrid2 -->
+      <class name="POM.SGrid">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="FF"/>
+        </methods>
+      </class> <!-- POM.SGrid -->
+    </classes>
+  </test> <!-- Windows / Firefox(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

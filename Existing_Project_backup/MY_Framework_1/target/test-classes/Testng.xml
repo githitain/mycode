@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<!--  <suite name="Parallel test suite" parallel="methods" thread-count="1"> -->
+	
+	<suite name="Parallel"> 
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+	</listeners>
+	<test name="test">
+		<classes>
+			<class name="TestSuites.TestSuite_1">
+			</class>
+			<class name="TestSuites.TestSuite_2">
+			</class>
+						
+		</classes>
+	</test>
+</suite>

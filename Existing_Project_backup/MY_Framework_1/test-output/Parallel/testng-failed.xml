@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parallel]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="test(failed)">
+    <classes>
+      <class name="TestSuites.TestSuite_2">
+        <methods>
+          <include name="TC2_SearchTerm"/>
+          <include name="TS2_Result"/>
+          <include name="TC2_Login"/>
+        </methods>
+      </class> <!-- TestSuites.TestSuite_2 -->
+      <class name="TestSuites.TestSuite_1">
+        <methods>
+          <include name="TS2_Result"/>
+          <include name="setUp"/>
+          <include name="TC1_SearchTerm"/>
+          <include name="TC1_Login"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- TestSuites.TestSuite_1 -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Parallel] -->

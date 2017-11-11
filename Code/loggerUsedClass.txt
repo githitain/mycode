@@ -1,0 +1,13 @@
+package cClasses;
+
+public class loogerUsedClass 
+{
+	public static void main(String args[])
+	{
+		logging.logger.error("this is an error");
+		logging.logger.info("This is info message");
+		logging.logger.debug("This is a debug message");
+		logging.logger.fatal("This is a fataul error messae");
+		logging.logger.warn("This is a warning message");
+	}
+}

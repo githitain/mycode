@@ -1,0 +1,19 @@
+#Time to wait
+time=30
+#dev
+local=https://accounts.google.com/ServiceLogin?service=mail&passive=true&rm=false&continue=https://mail.google.com/mail/&ss=1&scc=1&ltmpl=default&ltmplcache=2&emr=1
+#qa
+#local=
+#prod
+#local=
+#browser=*htmlunit
+browser=*firefox
+#browser=*iexplore
+#browser= *googlechrome
+# browser=*safari
+
+//Mychange-S
+//Mychange-D
+
+D:\Workspace_2\MvnPageObject\src\test\resources\Configuration.txt
+D:\Workspace_2\PageObject\Configuration.txt

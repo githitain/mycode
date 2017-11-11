@@ -1,0 +1,20 @@
+Feature: Data table
+Scenario: Verify that Search functinality for Google.
+
+
+Given User am on the Google page
+When I enter Search Term and click on submit button
+Then Close the Application
+
+ 
+
+| Fields                 | Values              |
+| First Name             | Tom                 |
+| Last Name              | Kenny               |
+| Email Address          | someone@someone.com |
+| Re-enter Email Address | someone@someone.com |
+| Password               | Password1           |
+| Birthdate              | 01                  |
+| Search Term            | selenium 					 |
+| Birthdate              | 01                  |
+

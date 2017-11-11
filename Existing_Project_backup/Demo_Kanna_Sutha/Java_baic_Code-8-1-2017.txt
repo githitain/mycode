@@ -1,0 +1,88 @@
+Topics of Class-
+Java OOps 
+ Class- It is grougn of object School.
+ Class cosnsits below major things-
+	Variables-It is things that can change.
+		Local Variables-It ia variable that we define inside method,  construcs, block.
+		Instance Variables-It ia variable that we define outside method but inside the class.
+		Class variables-It ia variable that we define outside method but inside the class with the static keyword.
+	
+	
+	Method- It is Functions which define the use of variables.
+	
+	Obejct-An entity of class like- Stundes, teachers, principal.		
+	We declar obejct with new keyword followd by the class.
+
+	Constructors-
+		its a special method to used to insitla on obejct.
+		Its name same as class name.
+		It cannot be abstract, static and fianl;
+	
+	Constructors types-
+		Default Constructors
+		Prameteriz Constructors
+	
+	Object Array
+		It is collection Simmler data types and hold index.
+		We hold refrence varibales like string and object.
+		
+	Inheritance
+		When we use variable and method of the parents class into chid class we call it inherticance. 
+		It is super and sub classes relationship.
+		
+		
+		this-It is used to have variable and methos/construcs of same class.
+		Super-It is used to have variable and methos/construcs of parent class. It acces immedicate parent class.
+		
+	Polymorphism
+		It is the procee to get different ways to perfom one task.
+		It is the procee to get different results form the same method.
+	Polymorphism types	
+		Method Overlading/Static binding - It is the procee to use same method multiple times in the same class.
+		Method Overriding/dynamic binding - It is the procee to use same method of parents class in child class.
+	
+	Abstraction-It is the procee to hiding the details and internal procce.
+	Abstract method- It is the method which we declare without giving any implementation.
+	Abstract class- 
+			It is decalre as abstract.
+			It canot be instanied
+			This class may have abstract method and simple method.		
+	
+	Interface-
+			-It is used for full abstraction
+			-all method are abstract by defualt
+			-varaiuble is assinged value at the delcaration times
+			
+
+	Encapsulation- It is the procee to bind the varaible, methos, construcs and obejct into a single unit. Which we call class.
+	
+	Fianl Keywrod- It is used to restrict user to do follwing.
+					-Stop value change
+					-stop overlaoding method
+					-stop calling the class to differnt class
+		
+		Final Variable-it is used to make any variable final.
+		Final method- it is used to make method final and no one can override it.
+		Final class- it used to make class final and no one can extend it.
+		
+		
+	Static keyword-It is used for memory managemnt. It is used for varaible, method, static block.			
+		Static varaible
+					-It is used for a vraible that will remain same thorought all the reuiremnts like company name, college name, school name
+					-It is loaaded in memnory only once and used any numner of times without loading again and agian.
+		Static method
+					-It used without any object.
+					-Thesew methos can access only static variables.
+					-these method cannot use non statis vaibles
+					-this and super cannout be used in static method.
+					
+		Static block
+					-This block is excuted at the time of class loading.
+					-we can have multiple static block but they run top to buttom.
+					
+		
+					
+
+-Junit Framework
+TestNG Framework
+Page Object Framework Creation

@@ -1,0 +1,2 @@
+email_txt=Email
+next_btn=next

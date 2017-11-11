@@ -1,0 +1,106 @@
+0-What is Java-
+It is opn source prograames.
+
+1-Features of JavA
+
+	Simlpe-
+		1-user frindaly.
+		2-Garbage collector.
+		3-Easy syntx
+
+	Architecherl Netural- Wroks with differtn PC proceers
+	Mutltrhard-Java has Threading.  
+	Robut-
+		Garbage collector
+		No poniter in JAVA
+	Secure
+		Because its code is converted in bytecode once our prograame is compileed
+
+	Platform indepenedt- Programe/software develped in java can run on pc even if it has diffenrt configrraution. We need JDK or JRK. 
+	Object Orinent lanuage- OOPs- In java we do prgamging on the bassic of Class and object approach.
+		Class	
+		Object	
+		Polyformisme
+		Inhertance
+		Absctraction
+		
+3-What are then JVM, JRE and JDK.
+JVM- It not physically exits. It works to convert java code into bytecode and compile the prograame.
+JRE- Java runtime envirment. It physically exits. It is the prat of JDK. It has the ability to run a prgaame. It has set of libires and tool to run a prgaame.
+JDK- It is complten kit. It has ability to run any prograame or applet or j2ee.
+	
+2-Varibales in Java
+Varibales- thesr are idnerntifires that holds the identification of value that can be changed. 
+		1-Varibale name shold be unique.
+		2-Variable sould strat either form ablphate or _
+		3-Keyword  shoid not be used as variables
+
+		Differnt type of variables:- (Will be coverd in CLass and Object session)
+		local variables
+		Instance Variables
+		Static Variables
+		
+		12.033468865278
+
+3-Datatype in Java-
+It is the type of the data. Diffent kind of datatye
+	1-Primitive data type- Predefined datatype by JAVA.
+		1-byte
+		2-short
+		3-int-12-32-bit
+		4-long-12-64 bits
+		5-float-12.0-32 bits
+		6-doble-12.0-64 bits
+		7-boolean-true, false - 1 bit
+		8-char-ad-16 16-bit unicode
+		
+	
+	2-Non-Primitive-The data type those customized. It refers to object and we can never change the.
+		1-String 
+		2-Array
+	
+	
+
+4-Basic prograames
+5-Operatores in Java
+	It tells the comlier to perform action on varibnlaes
+	Differnt types of operaters
+	1-Arithmatic 
+		+,_,*,/,%
+	2-Relational 
+		<,<=,>,>=,==,!=
+	3-Logical 
+		&&-Loical and,!!-Logical or, !-Logical not
+	4-Assignment 
+		=-simmple assignemnt
+		+=-Add and assignment
+		-=-Subsctract and assignemnt
+		*=-Mutliple and assignment
+		/=-Divide and assignent
+	5-Bitwise
+		&-Binary and operaters
+		|-Binary or 
+		^-Binary XOR
+		~-Binary one complemnt
+		<<-Binanry right shift
+		>>-Binary left shift
+		
+6-Basic prograames
+7-Access Modifiers in Java
+	We user modifiers to define the scope of a class and funtion and variables.
+	Kind of modifiers
+		Default:-It has scopde with in the same paksges
+		Public:IT has scope everywhere
+		Protacted:It has scope in within the pakage and all the sub classes.
+		private: It has scope only witnin the class
+		
+8-Loop and conditions
+	1- If statemnt
+	2- If else statment
+	3- for loop
+	4- while loop
+	5- do while loop
+	6- switch
+		
+8-Basic prograames
+--+-

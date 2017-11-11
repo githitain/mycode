@@ -1,0 +1,78 @@
+3-Program to read from a file using BufferedReader class
+
+import java. Io *;
+class ReadTest
+{
+ public static void main(String[] args)
+ {
+  try 
+  {
+   File fl = new File("d:/myfile.txt");
+   BufferedReader br = new BufferedReader(new FileReader(fl)) ;
+   String str;
+   while ((str=br.readLine())!=null)
+   {
+    System.out.println(str);
+   }
+   br.close();
+   fl.close();
+  }
+  catch (IOException  e)
+  { e.printStackTrace(); }
+ }
+}
+
+
+
+
+4-Program to write to a File using FileWriter class
+
+import java. Io *;
+class WriteTest
+{
+ public static void main(String[] args)
+ {
+  try 
+  {
+   File fl = new File("d:/myfile.txt");
+   String str="Write this string to my file";
+   FileWriter fw = new FileWriter(fl) ;
+   fw.write(str);
+   fw.close();
+   fl.close();
+  }
+  catch (IOException  e)
+  { e.printStackTrace(); }
+ }
+}
+
+
+
+
+ 
+5-How to delete file in Java
+
+import java.io.File;
+public class DeleteFileExample
+{
+    public static void main(String[] args)
+    {
+    	try{
+
+    		File file = new File("c:\\logfile20100131.log");
+
+    		if(file.delete()){
+    			System.out.println(file.getName() + " is deleted!");
+    		}else{
+    			System.out.println("Delete operation is failed.");
+    		}
+
+    	}catch(Exception e){
+
+    		e.printStackTrace();
+
+    	}
+
+    }
+}
+

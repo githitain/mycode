@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Test Suite" verbose="1" parallel="tests" thread-count="2">
+
+   <test name="Windows / Firefox">
+      <classes>
+         <class name="POM.SGrid" />
+      </classes>
+   </test>
+
+   <test name="Windows / ie">
+      <classes>
+         <class name="POM.SGrid2" />
+      </classes>
+   </test>
+
+</suite>

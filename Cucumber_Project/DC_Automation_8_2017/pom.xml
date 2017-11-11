@@ -1,0 +1,203 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>DC_Automation_8_2017</groupId>
+  <artifactId>DC_Automation_8_2017</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <cucumber.version>1.2.4</cucumber.version>
+  </properties>
+  
+  <build>
+  
+    <plugins>
+	
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>2.3.2</version>
+			<configuration>
+				<source>1.8</source>
+				<target>1.8</target>
+			</configuration>
+			</plugin>
+		
+		<plugin>
+		    <groupId>org.codehaus.mojo</groupId>
+		    <artifactId>exec-maven-plugin</artifactId>
+<!-- 		    <executions>
+		        <execution>
+		            <id>my-execution</id>
+		            <phase>test</phase>
+		            <goals>
+		                <goal>java</goal>
+		            </goals>
+		        </execution>
+		    </executions> -->
+		    <configuration>
+		        <mainClass>cClasses.Main</mainClass>
+		        <!-- <classpathScope>test</classpathScope> -->
+		    </configuration>
+		</plugin>
+		
+	  	<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-jar-plugin</artifactId>
+			<version>2.4</version>
+			<configuration>
+				<excludes>
+					<exclude>**/*.properties</exclude>
+					<exclude>Images/**</exclude>
+					<exclude>SampleFiles/**</exclude>
+				</excludes>
+				<archive>
+					<manifest>
+						<addClasspath>true</addClasspath>
+						<addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+					    <mainClass>cClasses.Main</mainClass>
+						<classpathPrefix>Support/dependency-jars/</classpathPrefix>
+					</manifest>
+					<manifestEntries>
+						<Class-Path>Support/dependency-jars/</Class-Path>
+					</manifestEntries>
+				</archive>
+			</configuration>
+		</plugin>
+		
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-dependency-plugin</artifactId>
+			<version>2.5.1</version>
+			<executions>
+				<execution>
+					<id>copy-dependencies</id>
+					<phase>package</phase>
+					<goals>
+						<goal>copy-dependencies</goal>
+					</goals>
+					<configuration>
+						<includeTypes></includeTypes>
+						<excludeTransitive>false</excludeTransitive>
+						<outputDirectory>${project.build.directory}/Support/dependency-jars/</outputDirectory>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+	
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-resources-plugin</artifactId>
+			<version>2.5</version>
+			<executions>
+				<execution>
+					<id>copy-my-resources</id>
+					<phase>process-resources</phase>
+					<goals>
+						<goal>copy-resources</goal>
+					</goals>
+					<configuration>
+						<overwrite>true</overwrite>
+						<outputDirectory>${project.build.directory}/Resources/</outputDirectory>
+						<resources>
+							<resource>
+								<directory>Resources</directory>
+								<includes>
+									<include>**</include>
+								</includes>
+							</resource>
+						</resources>
+					</configuration>
+				</execution>
+			</executions>
+		</plugin>
+	</plugins>
+ </build>
+
+ <dependencies>			
+      	<dependency>				
+		       <groupId>org.seleniumhq.selenium</groupId>								
+		       <artifactId>selenium-java</artifactId>								
+		       <version>3.4.0</version>								
+		</dependency>				
+	    
+	    <dependency>				
+	            <groupId>org.testng</groupId>								
+	            <artifactId>testng</artifactId>								
+	            <version>6.8</version>								
+	            <!-- <scope>test</scope>	 -->						  			
+	    </dependency>	
+	       	
+	    <dependency>
+			    <groupId>info.cukes</groupId>
+			    <artifactId>cucumber-java</artifactId>
+			    <version>1.2.4</version>
+		</dependency>	
+			
+			<!-- https://mvnrepository.com/artifact/dom4j/dom4j -->
+		<dependency>
+			    <groupId>dom4j</groupId>
+			    <artifactId>dom4j</artifactId>
+			    <version>1.6.1</version>
+		</dependency>
+			
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			    <groupId>org.apache.poi</groupId>
+			    <artifactId>poi</artifactId>
+			    <version>3.9</version>
+		</dependency>
+			
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			    <groupId>org.apache.poi</groupId>
+			    <artifactId>poi-ooxml</artifactId>
+			    <version>3.9</version>
+		</dependency>
+			
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml-schemas -->
+		<dependency>
+			    <groupId>org.apache.poi</groupId>
+			    <artifactId>poi-ooxml-schemas</artifactId>
+			    <version>3.9</version>
+		</dependency>
+		<dependency>
+		    <groupId>log4j</groupId>
+		    <artifactId>log4j</artifactId>
+		    <version>1.2.17</version>
+		</dependency>
+		
+			
+			
+		<!-- https://mvnrepository.com/artifact/org.apache.xmlbeans/xmlbeans -->
+		<dependency>
+			    <groupId>org.apache.xmlbeans</groupId>
+			    <artifactId>xmlbeans</artifactId>
+			    <version>2.6.0</version>
+		</dependency>
+			
+		<dependency>
+			    <groupId>info.cukes</groupId>
+			    <artifactId>cucumber-testng</artifactId>
+			    <version>1.2.4</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/com.sitture/cucumber-jvm-extentreport -->
+	<dependency>
+	    <groupId>com.sitture</groupId>
+	    <artifactId>cucumber-jvm-extentreport</artifactId>
+	    <version>2.0.1</version>
+	</dependency>
+
+		<dependency>
+		
+		 <groupId>com.github.mkolisnyk</groupId>
+		 <artifactId>cucumber-reports</artifactId>
+		 <version>0.0.2</version>
+		</dependency>
+		
+		
+ </dependencies>
+  
+  
+</project>

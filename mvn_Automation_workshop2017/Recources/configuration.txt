@@ -1,0 +1,3 @@
+#browser=firefox
+browser=chorme
+url=http://www.msn.com/

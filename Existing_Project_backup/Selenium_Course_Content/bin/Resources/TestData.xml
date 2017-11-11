@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<qaenv>
+	<dc>
+		<Skills>Software Development</Skills>
+		<Location>india</Location>
+		<Location>india</Location>
+		<textToSelect>Delooper</textToSelect>
+		<password>51945erq</password>
+	</dc>
+	<X_SBI>
+		<selectLogin>Vistaar</selectLogin>
+		<Cop_user>Vistaar</Cop_user>
+		<Cop_pass>Vistaar</Cop_pass>
+		<targetBrowser>googlechrome</targetBrowser>
+		<site>http://erdev.iii.com/iii/dc-host630</site>
+		<username>iii</username>
+		<password>51945erd</password>
+	</X_SBI>
+	<XSierra>
+		<Xusername>iii</Xusername>
+		<Xpassword>18745noi</Xpassword>
+		<XCuser>xman</XCuser>
+		<XCUNumber>1</XCUNumber>
+	</XSierra>
+</qaenv>

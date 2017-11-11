@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="83201" started-at="2016-08-03T05:50:36Z" finished-at="2016-08-03T05:51:59Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="83201" started-at="2016-08-03T05:50:36Z" finished-at="2016-08-03T05:51:59Z">
+      <class name="Sierra_TestSuite.TS_Sierra_UserAccounts">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Sierra_TestSuite.TS_Sierra_UserAccounts@17c3925]" name="setUp" is-config="true" duration-ms="15222" started-at="2016-08-03T11:20:36Z" finished-at="2016-08-03T11:20:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="TC1()[pri:0, instance:Sierra_TestSuite.TS_Sierra_UserAccounts@17c3925]" name="TC1" duration-ms="65404" started-at="2016-08-03T11:20:51Z" finished-at="2016-08-03T11:21:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC1 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Sierra_TestSuite.TS_Sierra_UserAccounts@17c3925]" name="tearDown" is-config="true" duration-ms="2558" started-at="2016-08-03T11:21:56Z" finished-at="2016-08-03T11:21:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Sierra_TestSuite.TS_Sierra_UserAccounts -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

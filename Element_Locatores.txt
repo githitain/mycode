@@ -1,0 +1,125 @@
+	
+Elements Locatores:-
+1-BY id
+	Ex- id=submit
+	driver.findElement(By.id("submit")).click();
+	
+2-By Name	
+	Ex-	name=submit
+	driver.findElement(By.name("submit")).click();
+	
+3-By Linktext	
+	Ex-	linText=submit
+	driver.findElement(By.linkText("submit")).click();
+	
+4-By PartialLinktext	
+	Ex-	partialLinkText=submit
+	driver.findElement(By.partialLinkText("submit"));	
+	
+5-By TagName
+	Ex-	tagName=button
+	driver.findElement(By.tagName("button"));
+
+6-By Class Name
+	Ex-	class=name
+	driver.findElement(By.className("name"));
+	
+7-CSS Selector	
+	A-Locating by CSS Selector - Tag and ID
+		Syntax- css=tag#id 
+			tag = the HTML tag of the element being accessed
+			# = the hash sign. This should always be present when using a CSS Selector with ID
+			id = the ID of the element being accessed
+		Ex- css=input#email	
+		driver.findElement(By.cssSelector("button#idOfButton")).click();
+	
+	B-Locating by CSS Selector - Tag and Class
+		Syntax- css=tag.class 
+			tag = the HTML tag of the element being accessed
+			. = the dot sign. This should always be present when using a CSS Selector with class
+			class = the class of the element being accessed
+		Ex- css=input.inputtext
+		driver.findElement(By.cssSelector("input.Automation")).click()
+		
+	C-Locating by CSS Selector - Tag and Attribute	
+		Syntax- css=tag[attribute=value]
+			tag = the HTML tag of the element being accessed
+			[ and ] = square brackets within which a specific attribute and its corresponding value will be placed
+			attribute = the attribute to be used. It is advisable to use an attribute that is unique to the element such as a name or ID.
+			value = the corresponding value of the chosen attribute.
+		Ex-css=input[name=lastName]
+		driver.findElement(By.cssSelector("input[name=lastName]")).click()
+	
+	D-Locating by CSS Selector - tag, class, and attribute
+		Syntax- css=tag.class[attribute=value]
+			tag = the HTML tag of the element being accessed
+			. = the dot sign. This should always be present when using a CSS Selector with class
+			class = the class of the element being accessed
+			[ and ] = square brackets within which a specific attribute and its corresponding value will be placed
+			attribute = the attribute to be used. It is advisable to use an attribute that is unique to the element such as a name or ID.
+			value = the corresponding value of the chosen attribute.
+		Ex-css=input.inputtext[tabindex=1]
+		driver.findElement(By.cssSelector("input.inputtext[tabindex=1]")).click()
+		
+	E-Locating by CSS Selector - inner text
+		Syntax-css=tag:contains("inner text")
+			tag = the HTML tag of the element being accessed
+			inner text = the inner text of the element
+		Ex-css=font:contains("Password:")	
+		driver.findElement(By.cssSelector("font:contains("Password:")")).click()
+		
+8-DOM Selector	
+	A-Locating by DOM - getElementById	
+		Syntax-document.getElementById("id of the element")
+			id of the element = this is the value of the ID attribute of the element to be accessed. This value should always be enclosed in a pair of parentheses ("").
+		Ex-document.getElementById("persist_box")
+		driver.findElement(byDom("document.getElementById("persist_box")"));
+		
+	B-Locating by DOM - getElementsByName
+		Syntax-document.getElementsByName("name")[index]
+		name = name of the element as defined by its 'name' attribute
+		index = an integer that indicates which element within getElementsByName's array will be used.
+	Ex-"document.getElementsByName("servClass")[0]"
+	driver.findElement(byDom("document.getElementsByName("servClass")[0]"));
+	
+	C-Locating by DOM - dom:name
+		Syntax-document.forms["name of the form"].elements["name of the element"]
+		name of the form = the value of the name attribute of the form tag that contains the element you want to access
+		name of the element = the value of the name attribute of the element you wish to access
+	Ex-"document.forms["home"].elements["userName"]"	
+	driver.findElement(byDom("document.forms["home"].elements["userName"]));
+	
+	D-Locating by DOM - dom:index
+	Syntax-document.forms[index of the form].elements[index of the element]
+		index of the form = the index number (starting at 0) of the form with respect to the whole page
+		index of the element = the index number (starting at 0) of the element with respect to the whole form that contains it
+	Ex-"document.forms[0].elements[3]" 	
+	driver.findElement(byDom("document.forms[0].elements[3]"));
+
+9-Xpath
+	//div[(@class = "secondIndent")]/span[2]/a[contains(text(),'encore')]/ancestor::span[2]/div[1]/span[2]/span[1]//a/span	
+	
+Bib1_PlaceHoldOverdrive_btn
+//div[@class ='PlaceHoldOverdrive']/ancestor::div[contains(@class, 'gridBrowseContent2 searchResult')]/div[2]/div[2]/span[1]/a
+
+Cart1_PlaceHoldOverdrive_btn
+//div[@class ='PlaceHoldOverdrive']/ancestor::div[contains(@class, 'gridBrowseContent2 searchResult')]/div[1]/div[1]/div[2]/ul/li[2]
+
+Bib1_wthBeTheFirstReview_link
+//div[@class ="ratingReviewsSummary"]/div[1]/div[2]/a[contains(text(),'Be the first to review')]/ancestor::div[contains(@class, 'gridBrowseContent2 searchResult')]/div[2]/div[2]/span[1]/a
+
+Bib1_wthEditReview_link
+//div[@class ="gridBrowseCol1"]/div[1]/span[1]/ul[1]/li[1]/a[contains(text(),'edit')]/ancestor::div[contains(@class, 'gridBrowseContent2 searchResult')]/div[2]/div[2]/span[1]/a
+
+1_2AvailableBookCheckoutwithOverdrive_btn
+//div[contains(@class, 'gridBrowseContent2 searchResult')]/div[2]/div[2][contains(., '1 of 2 copies available')]/ancestor::div[contains(@class, 'gridBrowseContent2 searchResult')]//div[@class ='CheckoutOverdrive']//a
+
+
+
+
+
+
+	
+		
+		
+		

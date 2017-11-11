@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="test(failed)" preserve-order="true">
+    <classes>
+      <class name="Pag_Fac.LoginLogoutTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testLoginLogout"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- Pag_Fac.LoginLogoutTest -->
+    </classes>
+  </test> <!-- test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

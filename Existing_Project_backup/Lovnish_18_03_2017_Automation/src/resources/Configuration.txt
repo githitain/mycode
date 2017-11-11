@@ -1,0 +1,26 @@
+##########---Time to wait
+time=50
+
+
+
+##########---Get Browser file
+#browser=htmlunit
+browser=firefox
+#browser=internetexplorer
+#browser=chrome
+#browser=safari
+
+
+##########---Get Environment
+#local=http://172.16.77.162/sierra/admin
+local=http://www.naukri.com/
+#local=https://www.onlinesbi.com/
+#local=https://www.google.com/
+Production=http://www.naukri.com/
+dev=http://www.naukri.com/
+
+###########--Get Other File
+OR=D://Workspace_2//Selenium_Course_Content//bin//Resources//OR1.xlsx
+TD=D://Workspace_2//Selenium_Course_Content//bin//Resources//TestData.xml
+A1=D://Workspace_2//Selenium_Course_Content//bin//Resources//OR1.xlsx
+
